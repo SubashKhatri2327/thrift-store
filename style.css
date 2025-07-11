@@ -1,0 +1,253 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #e3e6e6;
+}
+
+/* Navbar */
+.navbar {
+  height: 60px;
+  background-color: #131921;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff9900;
+}
+
+.border {
+  border: 2px solid transparent;
+}
+
+.border:hover {
+  border: 2px solid white;
+}
+
+.search-bar {
+  flex: 1;
+  margin: 0 20px;
+  display: flex;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  outline: none;
+}
+
+.search-bar button {
+  padding: 8px 16px;
+  background-color: #febd69;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  gap: 50px;
+}
+
+.nav-links div {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Panel */
+.panel {
+  height: 40px;
+  background-color: #222f3d;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.panel-ops p {
+  display: inline;
+  margin-left: 15px;
+  cursor: pointer;
+
+  justify-content: space-evenly;
+}
+
+.panel-ops {
+  width: 70%;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+/* Hero Section */
+.hero {
+  background-image: url('olx.jpg');
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.hero-msg {
+  background-color: white;
+  color: black;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  width: 80%;
+  margin-bottom: 25px;
+}
+
+/* Recently Added */
+.recently-added {
+  padding: 40px 0;
+  background-color: #fff;
+}
+
+.recently-added h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  color: #333;
+}
+
+.recent-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px 20px;
+  padding: 0 20px;
+}
+
+.product-card {
+  flex: 0 0 calc(25% - 20px);
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  font-size: 16px;
+  margin: 10px 0 5px;
+  color: #222;
+}
+
+.product-card p {
+  color: #28a745;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.product-card small {
+  display: block;
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 6px;
+}
+
+/* Footer */
+footer {
+  background-color: #131921;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* ===== Modal (Login, Signup, Sell) ===== */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-box {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.modal-box h2 {
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.modal-box form input,
+.modal-box form textarea,
+.modal-box form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.modal-box form textarea {
+  resize: vertical;
+  min-height: 60px;
+}
+
+.modal-box button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #febd69;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.modal-box a {
+  color: #007185;
+  text-decoration: none;
+}
+
+.modal-box .close-btn {
+  margin-top: 10px;
+  background: none;
+  border: none;
+  color: #0066c0;
+  cursor: pointer;
+}
